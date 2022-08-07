@@ -1,0 +1,417 @@
+@import "variables";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'Fira Code', monospace;
+}
+
+@import "header";
+
+/*----------------------------------------*/
+
+.carousel-inner div div h5{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.carousel-inner div div a{
+    text-decoration: none;
+    color: black;
+}
+
+.carousel-inner div div a:hover{
+    color: rgba(255, 50, 0, 255);
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.nlTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.nlTitle h2{
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.socialsList{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-right: 30px;
+    width: 80%;
+}
+
+.socials{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+footer p{
+    text-align: center;
+}
+
+
+/*--------------------------------*/
+
+
+.filters{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+.store{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 18rem;
+}
+
+.contact, .empresa{
+
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    justify-content: space-evenly;
+}
+
+.contactInfo, .infoEmpresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.img-fluid{
+    height: 700px;
+}
+
+.tituloContacto, .tituloEmpresa{
+    font-weight: bolder;
+    font-size: 34px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.parrafoContacto1{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.parrafoContacto2{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.contactOptions{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.contactOptions p{
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.socialsContact{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.parrafoEmpresa1{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.parrafoEmpresa2{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.parrafoEmpresa3{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.gracias{
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+
+    header{
+        display: flex;
+        height: 150px;
+        justify-content: space-between;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .logo a img{
+        height: 100px;
+        width: 150px;
+    }
+
+    nav{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    nav .nav{
+        height: 120px;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    nav .nav a{
+        text-decoration: none;
+        color: black;
+    }
+
+    nav .nav a:hover{
+        color: rgba(255, 50, 0, 255);
+    }
+
+    /*...............................*/
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        height: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .nlTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-left: 0;
+        padding-bottom: 50px;
+    }
+    
+    .nlTitle h2{
+        font-size: 34px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .socialsList{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+       
+        width: 100%;
+        height: 100px
+    }
+    
+    .socials{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-right: 40px;
+    }
+    
+    footer{
+        padding-top: 100px;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 8px;
+    }
+
+    /*...............................*/
+
+    .filters{
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        justify-items: center;
+    }
+    
+    .store{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card{
+        width: 100%;
+    }
+    
+    /*...............................*/
+
+    .contact, .empresa{
+
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        justify-content: space-evenly;
+    }
+    
+    .contactInfo, .infoEmpresa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+    
+    .img-fluid{
+        display: none;
+        height: 700px;
+    }
+    
+    .tituloContacto, .tituloEmpresa{
+        font-weight: bolder;
+        font-size: 34px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .parrafoContacto1{
+        font-weight: 600;
+        font-size: 24px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .parrafoContacto2{
+        font-weight: 600;
+        font-size: 24px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .contactOptions{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .contactOptions p{
+        padding-top: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .socialsContact{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .parrafoEmpresa1{
+        font-weight: 600;
+        font-size: 24px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .parrafoEmpresa2{
+        font-weight: 600;
+        font-size: 24px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .parrafoEmpresa3{
+        font-weight: 600;
+        font-size: 24px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .gracias{
+        font-weight: bolder;
+        font-size: 24px;
+        text-align: center;
+    }
+}

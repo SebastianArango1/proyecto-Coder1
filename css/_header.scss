@@ -1,0 +1,46 @@
+@import "variables";
+
+header{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    
+    a img{
+    height: 100px;
+    }
+}
+
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    width: 50%;
+
+    .nav{
+        height: 120px;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        font-weight: bold;
+    }
+
+        a{
+            text-decoration: none;
+            color: black !important; 
+            &:hover{
+                color: $PrimaryColor !important;
+            }
+        }
+}
