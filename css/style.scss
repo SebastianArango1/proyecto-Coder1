@@ -1,5 +1,16 @@
 @import "variables";
+$colores:(bg1: white, bg2: $PrimaryColor);
 
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+@mixin font-size($weight, $size) {
+    font-weight: 600;
+    font-size: 24px;
+}
 
 *{
     margin: 0;
@@ -7,7 +18,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: map-get($colores, bg1);
     font-family: 'Fira Code', monospace;
 }
 
@@ -127,8 +138,7 @@ footer p{
 }
 
 .parrafoContacto1{
-    font-weight: 600;
-    font-size: 24px;
+    @include font-size(600, 24px);
     padding-bottom: 20px;
     text-align: center;
 }
@@ -141,9 +151,7 @@ footer p{
 }
 
 .contactOptions{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    @include flex-column-center;
 }
 
 .contactOptions p{
@@ -169,10 +177,8 @@ footer p{
 }
 
 .parrafoEmpresa2{
-    font-weight: 600;
-    font-size: 24px;
-    padding-bottom: 20px;
-    text-align: center;
+    @extend .parrafoEmpresa1;
+    color: aqua;
 }
 
 .parrafoEmpresa3{
@@ -189,6 +195,11 @@ footer p{
 }
 
 @media screen and (max-width: 767px){
+
+    body{
+        background-color: map-get($colores, bg2);
+        font-family: 'Fira Code', monospace;
+    }
 
     header{
         display: flex;
@@ -415,3 +426,4 @@ footer p{
         text-align: center;
     }
 }
+
