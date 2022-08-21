@@ -178,7 +178,7 @@ footer p{
 
 .parrafoEmpresa2{
     @extend .parrafoEmpresa1;
-    color: aqua;
+    /*color: aqua;*/
 }
 
 .parrafoEmpresa3{
@@ -196,10 +196,10 @@ footer p{
 
 @media screen and (max-width: 767px){
 
-    body{
+    /*body{
         background-color: map-get($colores, bg2);
         font-family: 'Fira Code', monospace;
-    }
+    }*/
 
     header{
         display: flex;

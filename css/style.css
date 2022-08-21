@@ -200,7 +200,7 @@ footer p {
 }
 
 .parrafoEmpresa2 {
-  color: aqua;
+  /*color: aqua;*/
 }
 
 .parrafoEmpresa3 {
@@ -217,10 +217,10 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    background-color: rgb(255, 50, 0);
-    font-family: "Fira Code", monospace;
-  }
+  /*body{
+      background-color: map-get($colores, bg2);
+      font-family: 'Fira Code', monospace;
+  }*/
   header {
     display: flex;
     height: 150px;
