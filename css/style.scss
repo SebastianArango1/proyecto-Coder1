@@ -26,6 +26,10 @@ body{
 
 /*----------------------------------------*/
 
+.portadaM{
+    display: none;
+}
+
 .carousel-inner div div h5{
     font-size: 34px;
     font-weight: bold;
@@ -46,6 +50,7 @@ body{
     align-content: center;
     justify-content: space-between;
     height: 150px;
+    padding-top: 150px;
 }
 
 .nlTitle{
@@ -78,6 +83,9 @@ body{
     align-content: center;
 }
 
+footer{
+    padding-top: 150px;
+}
 
 footer p{
     text-align: center;
@@ -107,6 +115,8 @@ footer p{
 .card{
     width: 18rem;
 }
+
+
 
 .contact, .empresa{
 
@@ -251,6 +261,18 @@ footer p{
 
     /*...............................*/
 
+    
+    .portadaM{
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+        height: 250px;
+        padding-top: 30px;
+            .portadaMobile{
+                max-width: max-content;
+            }
+    }
     .newsletter{
         display: flex;
         flex-direction: column;

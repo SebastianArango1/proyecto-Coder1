@@ -51,6 +51,10 @@ nav a:hover {
 }
 
 /*----------------------------------------*/
+.portadaM {
+  display: none;
+}
+
 .carousel-inner div div h5 {
   font-size: 34px;
   font-weight: bold;
@@ -71,6 +75,7 @@ nav a:hover {
   align-content: center;
   justify-content: space-between;
   height: 150px;
+  padding-top: 150px;
 }
 
 .nlTitle {
@@ -101,6 +106,10 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+
+footer {
+  padding-top: 150px;
 }
 
 footer p {
@@ -263,6 +272,19 @@ footer p {
     color: rgb(255, 50, 0);
   }
   /*...............................*/
+  .portadaM {
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    height: 250px;
+    padding-top: 30px;
+  }
+  .portadaM .portadaMobile {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
   .newsletter {
     display: flex;
     flex-direction: column;
